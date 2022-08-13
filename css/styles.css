@@ -1,0 +1,565 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer" ;
+}
+
+body {
+    background-image: url('../img/background.jpg');
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+.icons{
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+    .icons{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Estilos de la cabecera */
+.cabecera {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 20px;
+    background-color: rgb(242, 160, 174);
+}
+
+.cabecera > *{
+    flex: 1 1 10px;
+    align-self: center;
+    min-width: auto;
+    min-height: auto;
+}
+
+.cabecera .logoLink{
+    text-align: center;
+}
+
+.cabecera .searchForm{
+    text-align: end;
+}
+
+.cabecera .locationContainer a {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: grey;
+}
+
+.searchForm #search-bar{
+    width: 200px;
+    height: 20px;
+    font-size: 15px;
+}
+
+.searchForm button {
+    height: 32px;
+    border-radius: 0px;
+    color: rgb(242, 160, 174);
+    font-size: 15px;
+    background-color: #000000;
+    /* margin-right: 40px; */
+}
+
+@media screen and (min-width: 1024px) {
+
+    .cabecera {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .cabecera .locationContainer a {
+        font-size: 35px;
+        
+    }
+
+    .searchForm #search-bar{
+        width: 200px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .searchForm button {
+        height: 30px;
+        margin-right: 40px;
+    }
+
+}
+
+
+/* Estilos de la barra de navegacion */
+
+.nav-container {
+    grid-area: nav;
+    /* position: sticky; */
+}
+
+.nav-menu{
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(242, 160, 174);
+
+}
+
+.nav-menu li{
+    background-color: rgb(242, 160, 174);
+    flex: 1;
+    list-style-type: none;
+    text-align: center;
+}
+
+.nav-menu li:hover{
+    background-color: rgb(161, 105, 114);
+}
+
+.nav-menu li a{
+    font-family: 'Imbue', serif;
+    color: #000000;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 1024px) {
+    .nav-container {
+        grid-area: nav;
+        position: sticky;
+        top:0px;
+        z-index: 1;
+    }
+
+    .nav-menu{
+        flex-direction: row;
+        padding: 0px 10px ;
+        gap: 20px;
+    }
+}
+
+    /* Estilos del contenido principal */
+
+.main-wrapper{
+    width: fit-content;
+    grid-area: main;
+    margin: auto;
+    padding: 10px 20px 50px;
+    text-align: center;
+    background-color: rgba(209, 209, 209, 0.650);
+}
+
+.presentation{
+    position: relative;
+}
+
+.presentation-img {
+    width: 100%;
+    height: auto;
+}
+
+
+.presentation .presentationTextContainer--left {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 200px;
+}
+
+.presentation .presentationTextContainer--right {
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    width: 200px;
+}
+
+.presentationTitulo{
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
+.presentationTitulo.textoOscuro{
+    color: rgb(87, 57, 62);
+}
+
+.presentationTitulo.textoClaro {
+    color: #f08ef0;
+}
+
+.presentationParrafo{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+
+.presentationParrafo.textoOscuro{
+    color: #242424;
+
+}
+
+.presentationParrafo.textoClaro {
+    color: rgb(238, 161, 221);
+}
+
+@media screen and (min-width:1024px) {
+
+    .presentation{
+        margin: 0px 20px;
+
+    }
+    .card-container {
+        width: fit-content;
+        margin: auto;
+        position: relative;
+    }
+
+    .presentation .presentationTextContainer--left {
+        position: absolute;
+        top: 25%;
+        left: 2%;
+        width: 400px;
+    }
+    
+    .presentation .presentationTextContainer--right {
+        position: absolute;
+        top: 25%;
+        left: 59%;
+        width: 400px;
+    }
+
+    .presentationTitulo{
+        font-size: 50px;
+    }
+    
+    .presentationParrafo{
+        font-size: 30px;
+    }
+
+}
+
+/* acerca de - contenido principal*/
+
+#about-wrapper{
+    width: auto;
+    grid-area: main;
+}
+
+#about-wrapper .banner-acerca-de {
+    margin: 30px 0px;
+    width: 100%;
+    height: auto;
+}
+
+.about-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-wrapper .parrafo-acerca-de {
+    display: inline-block;
+    padding: 5px 10px;
+    width: 80%;
+    font-size: 15px;
+    font-family: 'Playfair Display', serif;
+    background-color: rgba(242, 160, 174, 0.8);
+
+}
+
+#about-wrapper .subtitulo-acerca-de {
+    display: inline-block;
+    margin: auto;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    background-color: rgba(242, 160, 174, 0.8);
+}
+
+@media screen and (min-width: 1024px) {
+
+    #about-wrapper{
+        width: 1000px;
+        grid-area: main;
+        margin: auto;
+        height: auto;
+        text-align: center;
+    }
+    
+    #about-wrapper .titulo-acerca-de {
+        font-size: 60px;
+    }
+
+    #about-wrapper .banner-acerca-de {
+        margin: 50px 0px;
+        width: auto;
+        height: auto;
+    }
+    
+    #about-wrapper .parrafo-acerca-de {
+        font-size: 20px;
+    }
+    
+    #about-wrapper .subtitulo-acerca-de {
+        font-size: 30px;
+    }
+
+}
+
+/* Contacto - contenido principal*/
+
+#wrapper-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-wrapper .titulo-contacto {
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+.main-wrapper .parrafo-contacto {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+
+}
+.formulario-contacto{
+    background-color: rgba(242, 160, 174, 0.8);
+    width: 400px;
+}
+
+.formulario-contacto label, .formulario-contacto input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.formulario-contacto label{
+    font-family: 'Playfair Display', serif;
+}
+
+.formulario-contacto .form-button {
+    color: rgb(242, 160, 174);;
+    border-radius: 0px;
+    border: #000000 solid 1px;
+    background-color: rgb(48, 48, 48);
+    width: 100px;
+    min-height: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+    .main-wrapper .titulo-contacto {
+        font-size: 60px;
+    }
+
+    .formulario-contacto{
+        background-color: rgba(242, 160, 174, 0.8);
+        width: 800px;
+    }
+}
+/* Que son las unias press on - contenido principal*/
+
+.main-wrapper .titulo-que-son {
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+}
+
+.main-wrapper .imagen-parrafo {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.imagen-parrafo > * {
+    width: 30%;
+    height: auto;
+    margin-top: 50px ;
+    margin-bottom: 50px;
+}
+
+.main-wrapper .parrafo-que-son {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+
+}
+
+/* Servicios - estilos general*/
+
+.main-wrapper .servicios-parrafo-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicios-parrafo-container > * {
+    width: 80%;
+    height: auto;
+    margin: 10px 0px;
+}
+
+.main-wrapper .titulo-servicios {
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+}
+.main-wrapper .parrafo-servicios {
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+
+}
+
+.main-wrapper .subtitulo-servicios {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width:1024px) {
+
+    .main-wrapper .servicios-parrafo-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .servicios-parrafo-container > * {
+        width: 30%;
+        height: auto;
+        margin: 50px 0px;
+    }
+
+    #services-wrapper{
+        width: 900px;
+    }
+
+    .main-wrapper .titulo-servicios {
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+    .main-wrapper .parrafo-servicios {
+        font-size: 20px;    
+    }
+    
+    .main-wrapper .subtitulo-servicios {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    
+}
+/* Estilos de la galeria*/
+
+#gallery-wrapper{
+    width: 90%;
+    grid-area: main;
+    margin: auto;
+    padding: 10px 20px 50px;
+    text-align: center;
+    background-color: rgba(209, 209, 209, 0.650);
+}
+
+.thumbnail-container{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin: 20px auto;
+
+}
+.gallery-thumbnail{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .thumbnail-container{
+        width: 200px;
+        height: 200px;
+        margin: 20px auto;
+
+    }
+    .gallery-thumbnail{
+        width: 100%;
+        height:auto;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    #gallery-wrapper{
+        width: 1000px ;
+    }
+
+    .thumbnail-container{
+        padding: 0 6px;
+        width: 24.99999%;
+    }
+
+    .gallery-thumbnail{
+        width: 100%;
+        height:auto;
+    }
+
+    
+}
+
+/*Estilos del pie de pagina*/
+
+.pie-de-pagina{
+    grid-area: footer;
+    background-color: #3a3a3a;
+    padding: 10px  30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pie-de-pagina p{
+    color: #FFFFFF;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.pie-de-pagina .footer-info{
+    flex: 1.5   ;
+}
+
+.pie-de-pagina .footer-social{
+    flex: 1;
+    padding-left: 100px;
+}
+
+.pie-de-pagina .footer-social a{
+    color: #FFFFFF;
+}
+
+.footer-social a .icons{
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .pie-de-pagina{
+        flex-direction: row;
+        justify-content: center;
+
+    }
+    
+}
