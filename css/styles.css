@@ -107,7 +107,7 @@ body {
 
 .nav-container {
     grid-area: nav;
-    /* position: sticky; */
+    
 }
 
 .nav-menu{
@@ -406,11 +406,17 @@ body {
     margin: 10px 0px;
 }
 
-.main-wrapper .parrafo-que-son {
+#que-son-wrapper .parrafo-que-son {
     font-size: 20px;
     font-family: 'Playfair Display', serif;
     margin-bottom: 10px;
 
+}
+
+#que-son-wrapper iframe{
+    margin-top: 20px;
+    width: 460px;
+    height: 320px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -419,7 +425,7 @@ body {
         width: 1000px;
         padding: 10px 20px 50px;
     }
-    
+
     #que-son-wrapper .titulo-que-son {
         font-size: 60px;
     }
@@ -443,6 +449,12 @@ body {
         font-family: 'Playfair Display', serif;
         margin-bottom: 10px;
     
+    }
+
+    #que-son-wrapper iframe{
+        margin-top: 5px;
+        width: 800px;
+        height: 600px;
     }
 }
 
