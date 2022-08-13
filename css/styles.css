@@ -267,7 +267,14 @@ body {
     flex-direction: column;
     align-items: center;
 }
+#about-wrapper .titulo-acerca-de {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: rgba(242, 160, 174, 0.8);
+    width: 80%;
+    margin: auto;
 
+}
 #about-wrapper .parrafo-acerca-de {
     display: inline-block;
     padding: 5px 10px;
@@ -364,31 +371,39 @@ body {
         font-size: 60px;
     }
 
-    .formulario-contacto{
-        background-color: rgba(242, 160, 174, 0.8);
+    .formulario-contacto {
         width: 800px;
     }
 }
 /* Que son las unias press on - contenido principal*/
 
-.main-wrapper .titulo-que-son {
+#que-son-wrapper{
+    width: 90%;
+    grid-area: main;
+    margin: auto;
+    padding: 10px 20px 50px;
+    text-align: center;
+    background-color: rgba(209, 209, 209, 0.650);
+}
+
+#que-son-wrapper .titulo-que-son {
     font-size: 60px;
     font-family: 'Playfair Display', serif;
 }
 
-.main-wrapper .imagen-parrafo {
+#que-son-wrapper .imagen-parrafo {
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
 
 .imagen-parrafo > * {
-    width: 30%;
+    width: 80%;
     height: auto;
-    margin-top: 50px ;
-    margin-bottom: 50px;
+    margin: 10px 0px;
 }
 
 .main-wrapper .parrafo-que-son {
@@ -396,6 +411,39 @@ body {
     font-family: 'Playfair Display', serif;
     margin-bottom: 10px;
 
+}
+
+@media screen and (min-width: 1024px) {
+
+    #que-son-wrapper{
+        width: 1000px;
+        padding: 10px 20px 50px;
+    }
+    
+    #que-son-wrapper .titulo-que-son {
+        font-size: 60px;
+    }
+    
+    #que-son-wrapper .imagen-parrafo {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .imagen-parrafo > * {
+        width: 80%;
+        height: auto;
+        margin-top: 50px ;
+        margin-bottom: 50px;
+    }
+    
+    #que-son-wrapper .parrafo-que-son {
+        font-size: 20px;
+        font-family: 'Playfair Display', serif;
+        margin-bottom: 10px;
+    
+    }
 }
 
 /* Servicios - estilos general*/
@@ -466,6 +514,23 @@ body {
 }
 /* Estilos de la galeria*/
 
+.gallery-title, .gallery-paragraph{
+    display: inline-block;
+    padding: 5px 10px;
+    width: 80%;
+    font-size: px;
+    font-family: 'Playfair Display', serif;
+    background-color: rgba(242, 160, 174, 0.863);
+}
+
+.gallery-title{
+    font-size: 20px;
+}
+
+.gallery-paragraph{
+    font-size: 15px;
+}
+
 #gallery-wrapper{
     width: 90%;
     grid-area: main;
@@ -475,22 +540,43 @@ body {
     background-color: rgba(209, 209, 209, 0.650);
 }
 
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 .thumbnail-container{
     width: 100%;
     height: auto;
+    padding: 5px;
     box-sizing: border-box;
     margin: 20px auto;
+    background-color: rgba(242, 160, 174, 0.8);
 
 }
+
+.thumbnail-container:hover{
+    border: black solid 2px;
+}
+
 .gallery-thumbnail{
     width: 100%;
     height: auto;
 }
 
 @media screen and (min-width: 768px) {
+
+    .gallery-title{
+        font-size: 60px;
+    }
+    
+    .gallery-paragraph{
+        font-size: 20px;
+    }
     .thumbnail-container{
-        width: 200px;
-        height: 200px;
+        width: 48%;
+        height: auto;
         margin: 20px auto;
 
     }
@@ -507,8 +593,7 @@ body {
     }
 
     .thumbnail-container{
-        padding: 0 6px;
-        width: 24.99999%;
+        width: 32%;
     }
 
     .gallery-thumbnail{
