@@ -36,19 +36,21 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 5px 20px;
     background-color: rgb(242, 160, 174);
+    
 }
 
-.cabecera > *{
+.cabecera > * {
     flex: 1 1 10px;
     align-self: center;
     min-width: auto;
     min-height: auto;
+    margin: 0px 20px;
 }
 
 .cabecera .logoLink{
     text-align: center;
+    
 }
 
 .cabecera .searchForm{
@@ -60,6 +62,16 @@ body {
     font-size: 15px;
     text-decoration: none;
     color: grey;
+    cursor: pointer;
+    transform: color 1s;
+}
+
+#dondeEncontrarnos{
+    cursor: pointer;
+}
+
+.cabecera .locationContainer a:hover{
+    color: rgb(111, 0, 255);
 }
 
 .searchForm #search-bar{
@@ -122,6 +134,8 @@ body {
     flex: 1;
     list-style-type: none;
     text-align: center;
+    cursor: pointer;
+    transition: all 1s;
 }
 
 .nav-menu li:hover{
@@ -170,7 +184,6 @@ body {
     width: 100%;
     height: auto;
 }
-
 
 .presentation .presentationTextContainer--left {
     position: absolute;
@@ -565,11 +578,13 @@ body {
     box-sizing: border-box;
     margin: 20px auto;
     background-color: rgba(242, 160, 174, 0.8);
+    transition: all 0.5s;
 
 }
 
 .thumbnail-container:hover{
     border: black solid 2px;
+    transform: scale(1.5, 1.5);
 }
 
 .gallery-thumbnail{
