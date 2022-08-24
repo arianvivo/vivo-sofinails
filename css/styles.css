@@ -59,7 +59,7 @@ body {
 
 .cabecera .locationContainer a {
     font-family: 'Playfair Display', serif;
-    font-size: 15px;
+    font-size: 1em;
     text-decoration: none;
     color: grey;
     cursor: pointer;
@@ -97,7 +97,7 @@ body {
     }
 
     .cabecera .locationContainer a {
-        font-size: 35px;
+        font-size: 1.5em;
         
     }
 
@@ -674,4 +674,19 @@ body {
 
     }
     
+}
+
+/* Navabar Bootstrap */
+
+.pink-background{
+    background: rgb(242, 160, 174);
+}
+.animation-darken{
+    transition: all 1s;
+    font-family: 'Imbue', serif;
+    font-size: 2rem;
+}
+
+.animation-darken:hover{
+    background-color: rgb(161, 105, 114);
 }

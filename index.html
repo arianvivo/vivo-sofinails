@@ -12,10 +12,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Imbue:opsz@10..100&family=Playfair+Display&family=Raleway:wght@300;400&family=Source+Sans+Pro:wght@300;400&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
 </head>
 
@@ -41,18 +41,99 @@
         </div>
     </header>
 
-    <nav class="nav-container">
-        <ul class="nav-menu">
-            <li><a href="./pages/servicios.html">Servicios</a></li>
-            <li><a href="./pages/galeria.html">Galería</a></li>
-            <li><a href="./pages/que-son-las-unas-press-on.html">Qué son las uñas press-on?</a></li>
-            <li><a href="./pages/contacto.html">Contacto</a></li>
-            <li><a href="./pages/acerca-de.html">Acerca de</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light pink-background">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active animation-darken">
+                    <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item animation-darken">
+                    <a class="nav-link" href="./pages/galeria.html">Galería</a>
+                </li>
+                <li class="nav-item animation-darken">
+                    <a class="nav-link" href="./pages/que-son-las-unas-press-on.html">Qué son las uñas press-on?</a>
+                </li>
+                <li class="nav-item animation-darken">
+                    <a class="nav-link" href="./pages/contacto.html">Contaco</a>
+                </li>
+                <li class="nav-item animation-darken">
+                    <a class="nav-link" href="./pages/acerca-de.html">Acerca de</a>
+                </li>
+
+            </ul>
+
+        </div>
     </nav>
 
     <main class="main-wrapper">
-        <article class="presentation">
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <article class="presentation">
+                        <div class="card-container">
+                            <img class="presentation-img" src="./img/sn-wide-presentation.jpg" alt="unias">
+                            <div class="presentationTextContainer--left">
+                                <h1 class="presentationTitulo textoOscuro">Uñas para cada ocasión</h1>
+                                <p class="presentationParrafo textoOscuro">Añadí estilo y glamour a todos tus outfits
+                                    combinándolos
+                                    con
+                                    los mejores
+                                    diseños en press on nails</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="carousel-item">
+                    <article class="presentation">
+                        <div class="card-container">
+                            <img class="presentation-img" src="./img/sn-wide-presentation-2.jpg" alt="unias">
+                            <div class="presentationTextContainer--right">
+                                <h1 class="presentationTitulo textoClaro">Variedad de estilos</h1>
+                                <p class="presentationParrafo textoClaro">Elegí entre texturas, colores, brillo y
+                                    cientos de otras
+                                    características
+                                    para destacar</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="carousel-item">
+                    <article class="presentation">
+                        <div class="card-container">
+                            <img class="presentation-img" src="./img/sn-wide-presentation-3.jpg" alt="unias">
+                            <div class="presentationTextContainer--left">
+                                <h1 class="presentationTitulo textoOscuro">Totalmente personalizadas</h1>
+                                <p class="presentationParrafo textoOscuro">Creá la idea para tus manos o elegí entre
+                                    cientos de
+                                    diseños
+                                    hechos 100%
+                                    a medida</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <!-- <span class="sr-only">Previous</span> -->
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <!-- <span class="sr-only">Next</span> -->
+            </a>
+        </div>
+
+        <!-- <article class="presentation">
             <div class="card-container">
                 <img class="presentation-img" src="./img/sn-wide-presentation.jpg" alt="unias">
                 <div class="presentationTextContainer--left">
@@ -86,33 +167,77 @@
                         a medida</p>
                 </div>
             </div>
-        </article>
+        </article> -->
     </main>
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container mw-100">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-white" style="background-color: #3a3a3a">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Links -->
+                <section class="">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-3 col-xl-5 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">
+                                Sofi Nails
+                            </h6>
+                            <p>Sofi Beauty Studios - Calle Falsa 123, Bahía Blanca Buenos Aries, República Argentina</p>
+                            <p>¿Dudas? ¿Consultas? Comunicate al 0800-33-NAILS (62457)</p>
+                            <p>Lunes a Viernes 8:00 hs a 17:00 hs</p>
+                        </div>
 
-    <footer class="pie-de-pagina">
-        <div class="footer-info">
-            <p>© Sofi Nails 2022 Todos los derechos reservados</p>
-            <p>Sofi Beauty Studios - Calle Falsa 123, Bahía Blanca Buenos Aries, República Argentina</p>
-            <p>¿Dudas? ¿Consultas? Comunicate al 0800-33-NAILS (62457)</p>
-            <p>Lunes a Viernes 8:00 hs a 17:00 hs</p>
-        </div>
-        <div class="footer-social">
-            <a href="https://www.facebook.com/sofia.meriggi">
-                <img id="facebook-icon" class="icons" src="./img/facebook.png" alt="Facebook">
-                <label for="facebook-icon">Sofi Nails</label>
-            </a>
-            <br />
-            <a href="https://www.instagram.com/sofi.nailsbb/">
-                <img id="instagram-icon" class="icons" src="./img/instagram.png" alt="Instagram">
-                <label for="instagram-icon">@sofi.nailsbb</label>
-            </a>
-            <br />
-            <a href="mailto:contacto@sofinails.com">
-                <img id="mail-icon" class="icons" src="./img/mail.png" alt="Mail">
-                <label for="mail-icon">contacto@sofinails.com</label>
-            </a>
-        </div>
-    </footer>
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+                            <!-- Facebook -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998"
+                                href="https://www.facebook.com/sofia.meriggi">
+                                <img id="facebook-icon" class="icons" src="./../img/facebook.png" alt="Facebook">
+                            </a>
+
+                            <!-- Instagram -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac"
+                                href="https://www.instagram.com/sofi.nailsbb/" role="button">
+                                <img id="instagram-icon" class="icons" src="./../img/instagram.png" alt="Instagram">
+                            </a>
+                            <!-- Mail -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39"
+                                href="mailto:contacto@sofinails.com" role="button"><img id="mail-icon" class="icons"
+                                    src="./../img/mail.png" alt="Mail">
+                            </a>
+
+                        </div>
+
+                    </div>
+                    <!--Grid row-->
+                </section>
+                <!-- Section: Links -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                <span>© Sofi Nails 2022 Todos los derechos reservados</span>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </div>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
+
 
 </html>
