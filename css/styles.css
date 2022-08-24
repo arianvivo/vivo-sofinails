@@ -356,7 +356,7 @@ body {
 @media screen and (min-width: 1024px) {
     
     #wrapper-contacto{
-        width: 80%;
+        width: 60%;
         margin: auto;
         padding: 10px 20px 50px;
     }
@@ -600,7 +600,16 @@ body {
     transition: all 0.5s;
 
 }
+.img-scale {
+    transition: all 0.5s;
 
+}
+
+.img-scale:hover{
+    border: black solid 2px;
+    transform: scale(1.5, 1.5);
+    z-index: -1;
+}
 .thumbnail-container:hover{
     border: black solid 2px;
     transform: scale(1.5, 1.5);
@@ -610,6 +619,11 @@ body {
     width: 100%;
     height: auto;
 }
+
+.col-12 img {
+    width: 100%;
+    transition: all 0.5s;
+  }
 
 @media screen and (min-width: 768px) {
 
@@ -629,6 +643,12 @@ body {
     .gallery-thumbnail{
         width: 100%;
         height:auto;
+    }
+
+    .col-12 img:hover{
+        transform: scale(1.5, 1.5);
+        position: relative;
+        z-index: 1;
     }
     
 }
