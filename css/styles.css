@@ -25,8 +25,8 @@ body {
 
 @media screen and (min-width: 1024px) {
     .icons{
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -341,17 +341,36 @@ body {
 /* Contacto - contenido principal*/
 
 #wrapper-contacto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    grid-area: main;
+    background-color: rgba(209, 209, 209, 0.8);
+    padding: 10px 20px 50px;
+}
+@media screen and (min-width: 768px) {
+    
+    #wrapper-contacto{
+        width: 90%;
+        margin: auto;
+        padding: 10px 20px 50px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    
+    #wrapper-contacto{
+        width: 80%;
+        margin: auto;
+        padding: 10px 20px 50px;
+    }
 }
 
-.main-wrapper .titulo-contacto {
+
+
+
+.titulo-contacto {
     font-size: 30px;
     font-family: 'Playfair Display', serif;
 }
 
-.main-wrapper .parrafo-contacto {
+.parrafo-contacto {
     font-size: 20px;
     font-family: 'Playfair Display', serif;
     margin-bottom: 10px;
@@ -689,4 +708,21 @@ body {
 
 .animation-darken:hover{
     background-color: rgb(161, 105, 114);
+}
+
+/* Footer Bootstrap */
+
+.bottom-footer{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.instagram-color{
+    background-color: #ac2bac !important
+}
+.facebook-color {
+    background-color: #3b5998 !important
+}
+
+.mail-color {
+    background-color: #dd4b39 !important
 }
