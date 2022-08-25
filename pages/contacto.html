@@ -45,7 +45,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active animation-darken">
+                <li class="nav-item  animation-darken">
+                    <a class="nav-link" href="./../index.html">Inicio</a>
+                </li>
+                <li class="nav-item animation-darken">
                     <a class="nav-link" href="./../pages/servicios.html">Servicios</a>
                 </li>
                 <li class="nav-item animation-darken">
@@ -54,7 +57,7 @@
                 <li class="nav-item animation-darken">
                     <a class="nav-link" href="./../pages/que-son-las-unas-press-on.html">Qué son las uñas press-on?</a>
                 </li>
-                <li class="nav-item animation-darken">
+                <li class="nav-item active animation-darken">
                     <a class="nav-link" href="./../pages/contacto.html">Contaco</a>
                 </li>
                 <li class="nav-item animation-darken">
@@ -66,18 +69,15 @@
         </div>
     </nav>
 
-    <!-- <main class="main-wrapper" id="wrapper-contacto"> -->
     <main id="wrapper-contacto">
         <h1 class="titulo-contacto">Dejanos un mensaje!</h1>
         <p class="parrafo-contacto">¿Dudas? ¿Consultas? ¿Sugerencias? Estamos para ayudarte!</p>
         <p class="parrafo-contacto">Dejanos tus datos y tu mensaje y nos ponemos en contacto!</p>
 
-        <form>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                </div>
+        <form class="contact-form">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
             </div>
 
             <div class="form-group col-md-6">
@@ -85,76 +85,50 @@
                 <input type="text" class="form-control" id="inputAddress" placeholder="Dirección">
             </div>
 
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="inputCity">Ciudad</label>
-                    <input type="text" class="form-control" id="inputCity">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="inputState">Provincia</label>
-                    <select id="inputState" class="form-control">
-                        <option selected>Seleccione...</option>
-                        <option>Buenos Aires</option>
-                        <option>Catamarca</option>
-                        <option>Chaco</option>
-                        <option>Chubut</option>
-                        <option>Córdoba</option>
-                        <option>Corrientes</option>
-                        <option>Entre Ríos</option>
-                        <option>Formosa</option>
-                        <option>Jujuy</option>
-                        <option>La Pampa</option>
-                        <option>La Rioja</option>
-                        <option>Mendoza</option>
-                        <option>Misiones</option>
-                        <option>Neuquén</option>
-                        <option>Río Negro</option>
-                        <option>Salta</option>
-                        <option>San Juan</option>
-                        <option>San Luis</option>
-                        <option>Santa Cruz</option>
-                        <option>Santa Fev</option>
-                        <option>Santiago del Estero</option>
-                        <option>Tierra del Fuego, Antártida e Islas del Atlántico Sur</option>
-                        <option>Tucumán</option>
-                    </select>
-                </div>
-
+            <div class="form-group col-md-6">
+                <label for="inputCity">Ciudad</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputState">Provincia</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Seleccione...</option>
+                    <option>Buenos Aires</option>
+                    <option>Catamarca</option>
+                    <option>Chaco</option>
+                    <option>Chubut</option>
+                    <option>Córdoba</option>
+                    <option>Corrientes</option>
+                    <option>Entre Ríos</option>
+                    <option>Formosa</option>
+                    <option>Jujuy</option>
+                    <option>La Pampa</option>
+                    <option>La Rioja</option>
+                    <option>Mendoza</option>
+                    <option>Misiones</option>
+                    <option>Neuquén</option>
+                    <option>Río Negro</option>
+                    <option>Salta</option>
+                    <option>San Juan</option>
+                    <option>San Luis</option>
+                    <option>Santa Cruz</option>
+                    <option>Santa Fev</option>
+                    <option>Santiago del Estero</option>
+                    <option>Tierra del Fuego, Antártida e Islas del Atlántico Sur</option>
+                    <option>Tucumán</option>
+                </select>
             </div>
 
-            <div class="form-group">
+            <div class="form-group col-md-6">
                 <label for="exampleFormControlTextarea1">Dejanos tu mensaje!</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-            <button type="reset" class="btn btn-primary">Reestablecer</button>
+            <div class="col text-center">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-primary">Reestablecer</button>
+            </div>
         </form>
 
-
-
-
-
-
-
-
-
-        <!-- <form class="formulario-contacto" action="">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre">
-            <br />
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido">
-            <br />
-            <label for="email">Email:</label>
-            <input type="email" id="email">
-            <br />
-            <label for="mensaje">Dejanos tu mensaje:</label>
-            <br />
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-            <br />
-            <input class="form-button" type="submit" value="Enviar">
-            <input class="form-button" type="reset" value="Reestablecer">
-        </form> -->
     </main>
     <footer class="text-center text-lg-start text-white" style="background-color: #3a3a3a">
         <!-- Grid container -->

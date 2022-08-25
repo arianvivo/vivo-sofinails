@@ -345,6 +345,11 @@ body {
     background-color: rgba(209, 209, 209, 0.8);
     padding: 10px 20px 50px;
 }
+
+.contact-form > *{
+    margin: 0 auto;
+}
+
 @media screen and (min-width: 768px) {
     
     #wrapper-contacto{
@@ -359,6 +364,10 @@ body {
         width: 60%;
         margin: auto;
         padding: 10px 20px 50px;
+    }
+
+    .contact-form {
+        min-width: auto;
     }
 }
 
@@ -602,7 +611,6 @@ body {
 }
 .img-scale {
     transition: all 0.5s;
-
 }
 
 .img-scale:hover{
