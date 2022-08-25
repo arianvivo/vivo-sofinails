@@ -173,7 +173,7 @@ body {
     margin: auto;
     padding: 10px 20px 50px;
     text-align: center;
-    background-color: rgba(209, 209, 209, 0.650);
+    background-color: rgba(209, 209, 209, 0.8);
 }
 
 .presentation{
@@ -424,7 +424,7 @@ body {
     margin: auto;
     padding: 10px 20px 50px;
     text-align: center;
-    background-color: rgba(209, 209, 209, 0.650);
+    background-color: rgba(209, 209, 209, 0.8);
 }
 
 #que-son-wrapper .titulo-que-son {
@@ -590,7 +590,7 @@ body {
     margin: auto;
     padding: 10px 20px 50px;
     text-align: center;
-    background-color: rgba(209, 209, 209, 0.650);
+    background-color: rgba(209, 209, 209, 0.8);
 }
 
 .gallery-container {
