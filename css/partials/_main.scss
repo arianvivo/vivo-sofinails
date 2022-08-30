@@ -1,0 +1,93 @@
+.main-wrapper{
+    width: fit-content;
+    grid-area: main;
+    margin: auto;
+    padding: 10px 20px 50px;
+    text-align: center;
+    background-color: rgba(209, 209, 209, 0.8);
+}
+
+.presentation{
+    position: relative;
+
+    .presentationTextContainer--left {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        width: 200px;
+    }
+
+    .presentationTextContainer--right {
+        position: absolute;
+        top: 20%;
+        left: 70%;
+        width: 200px;
+    }
+}
+
+.presentation-img {
+    width: 100%;
+    height: auto;
+}
+
+.presentationTitulo{
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
+.presentationTitulo.textoOscuro{
+    color: rgb(87, 57, 62);
+}
+
+.presentationTitulo.textoClaro {
+    color: #f08ef0;
+}
+
+.presentationParrafo{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+
+.presentationParrafo.textoOscuro{
+    color: #242424;
+
+}
+
+.presentationParrafo.textoClaro {
+    color: rgb(238, 161, 221);
+}
+
+@media screen and (min-width:1024px) {
+
+    .presentation{
+        margin: 0px 20px;
+
+        .presentationTextContainer--left {
+            position: absolute;
+            top: 25%;
+            left: 2%;
+            width: 400px;
+        }
+
+        .presentationTextContainer--right {
+            position: absolute;
+            top: 25%;
+            left: 59%;
+            width: 400px;
+        }
+    }
+    .card-container {
+        width: fit-content;
+        margin: auto;
+        position: relative;
+    }
+
+    .presentationTitulo{
+        font-size: 50px;
+    }
+    
+    .presentationParrafo{
+        font-size: 30px;
+    }
+
+}

@@ -1,0 +1,58 @@
+.pie-de-pagina{
+    grid-area: footer;
+    background-color: #3a3a3a;
+    padding: 10px  30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p{
+        color: #FFFFFF;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    
+    .footer-info{
+        flex: 1.5   ;
+    }
+
+    .footer-social{
+        flex: 1;
+        padding-left: 100px;
+        
+        a{
+            color: #FFFFFF;
+
+            .icons{
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .pie-de-pagina{
+        flex-direction: row;
+        justify-content: center;
+
+    }
+    
+}
+
+.bottom-footer{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.instagram-color{
+    background-color: #ac2bac !important
+}
+.facebook-color {
+    background-color: #3b5998 !important
+}
+
+.mail-color {
+    background-color: #dd4b39 !important
+}

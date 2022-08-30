@@ -1,0 +1,79 @@
+#wrapper-contacto{
+    grid-area: main;
+    background-color: rgba(209, 209, 209, 0.8);
+    padding: 10px 20px 50px;
+}
+
+.contact-form > *{
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    
+    #wrapper-contacto{
+        width: 90%;
+        margin: auto;
+        padding: 10px 20px 50px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    
+    #wrapper-contacto{
+        width: 60%;
+        margin: auto;
+        padding: 10px 20px 50px;
+    }
+
+    .contact-form {
+        min-width: auto;
+    }
+}
+
+.titulo-contacto {
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+.parrafo-contacto {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+
+}
+.formulario-contacto{
+    background-color: rgba(242, 160, 174, 0.8);
+    width: 400px;
+
+    label{
+        font-family: 'Playfair Display', serif;
+    }
+
+    .form-button {
+        color: rgb(242, 160, 174);;
+        border-radius: 0px;
+        border: #000000 solid 1px;
+        background-color: rgb(48, 48, 48);
+        width: 100px;
+        min-height: 20px;
+    }
+}
+
+.formulario-contacto label, .formulario-contacto input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .main-wrapper {
+        
+        .titulo-contacto {
+            font-size: 60px;
+        }
+    }
+
+    .formulario-contacto {
+        width: 800px;
+    }
+
+}
