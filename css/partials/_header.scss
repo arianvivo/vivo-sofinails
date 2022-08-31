@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgb(242, 160, 174);
+    background-color: $color-pink;
 
     .logoLink{
     text-align: center;
@@ -12,6 +12,14 @@
     }
     .searchForm{
         text-align: end;
+    }
+
+    > * {
+        flex: 1 1 10px;
+        align-self: center;
+        min-width: auto;
+        min-height: auto;
+        margin: 0px 20px;
     }
 
 
@@ -24,20 +32,12 @@
             cursor: pointer;
             transform: color 1s;
         }
-
+        
         a:hover{
-            color: rgb(111, 0, 255);
+            color: rgb(42, 0, 51);
         }
     }
  
-}
-
-.cabecera > * {
-    flex: 1 1 10px;
-    align-self: center;
-    min-width: auto;
-    min-height: auto;
-    margin: 0px 20px;
 }
 
 
@@ -56,7 +56,7 @@
     button {
         height: 32px;
         border-radius: 0px;
-        color: rgb(242, 160, 174);
+        color: $color-pink;
         font-size: 15px;
         background-color: #000000;
         /* margin-right: 40px; */
