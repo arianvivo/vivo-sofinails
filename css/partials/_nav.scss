@@ -6,10 +6,10 @@
 .nav-menu{
     display:flex;
     flex-direction: column;
-    background-color: $color-pink;
+    background-color: map-get($pinks-map, color-pink);
 
     li{
-        background-color: $color-pink;
+        background-color: map-get($pinks-map, color-pink);
         flex: 1;
         list-style-type: none;
         text-align: center;
@@ -26,7 +26,7 @@
     }
 
     li:hover{
-        background-color: $color-pink-darker;
+        background-color: map-get($pinks-map, color-pink-darker);
     }
 }
 
@@ -47,7 +47,7 @@
 }
 
 .pink-background{
-    background: $color-pink;
+    background: map-get($pinks-map, color-pink);
 }
 .animation-darken{
     transition: all 1s;
@@ -56,5 +56,5 @@
 }
 
 .animation-darken:hover{
-    background-color: $color-pink-darker;
+    background-color: map-get($pinks-map, color-pink-darker);
 }

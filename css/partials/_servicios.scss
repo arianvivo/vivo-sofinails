@@ -21,9 +21,11 @@
     }
     
     .parrafo-servicios {
-        font-size: 18px;
-        font-family: 'Playfair Display', serif;
-    
+
+        @include paragraph-text;
+        // font-size: 18px;
+        // font-family: 'Playfair Display', serif;
+
     }
 
     .subtitulo-servicios {

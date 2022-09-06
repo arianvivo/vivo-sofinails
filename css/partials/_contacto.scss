@@ -41,7 +41,7 @@
 
 }
 .formulario-contacto{
-    background-color: rgba(242, 160, 174, 0.8);
+    background-color: map-get($pinks-map, color-pink-translucid);
     width: 400px;
 
     label{

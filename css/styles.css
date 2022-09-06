@@ -426,8 +426,9 @@
   margin-bottom: 20px;
 }
 .main-wrapper .parrafo-servicios {
-  font-size: 18px;
+  font-size: 15px;
   font-family: "Playfair Display", serif;
+  background-color: rgba(242, 160, 174, 0.8);
 }
 .main-wrapper .subtitulo-servicios {
   font-size: 20px;
