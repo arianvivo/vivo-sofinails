@@ -16,7 +16,7 @@
 
     .titulo-servicios {
         font-size: 40px;
-        font-family: 'Playfair Display', serif;
+        font-family: $main-font;
         margin-bottom: 20px;
     }
     
@@ -24,13 +24,13 @@
 
         @include paragraph-text;
         // font-size: 18px;
-        // font-family: 'Playfair Display', serif;
+        // font-family: $main-font;
 
     }
 
     .subtitulo-servicios {
         font-size: 20px;
-        font-family: 'Playfair Display', serif;
+        font-family: $main-font;
         margin-bottom: 20px;
     }
 }

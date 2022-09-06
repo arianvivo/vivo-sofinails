@@ -1,6 +1,6 @@
 .nav-container {
     grid-area: nav;
-    
+
 }
 
 .nav-menu{
@@ -32,9 +32,10 @@
 
 
 @media screen and (min-width: 1024px) {
+
     .nav-container {
         grid-area: nav;
-        position: sticky;
+        position: sticky !important;
         top:0px;
         z-index: 1;
     }
@@ -49,6 +50,7 @@
 .pink-background{
     background: map-get($pinks-map, color-pink);
 }
+
 .animation-darken{
     transition: all 1s;
     font-family: 'Imbue', serif;

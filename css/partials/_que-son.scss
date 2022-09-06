@@ -8,7 +8,7 @@
 
     .titulo-que-son {
         font-size: 60px;
-        font-family: 'Playfair Display', serif;
+        font-family: $main-font;
     }
 
     .imagen-parrafo {
@@ -28,7 +28,7 @@
 
     .parrafo-que-son {
         font-size: 20px;
-        font-family: 'Playfair Display', serif;
+        font-family: $main-font;
         margin-bottom: 10px;
     
     }
@@ -66,7 +66,7 @@
 
         .parrafo-que-son {
             font-size: 20px;
-            font-family: 'Playfair Display', serif;
+            font-family: $main-font;
             margin-bottom: 10px;
         
         }
