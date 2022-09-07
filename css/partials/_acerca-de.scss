@@ -16,15 +16,13 @@
         @extend .titulo-acerca-de;
         width: 60%;
         padding: 10px 20px;
-        font-size: 20px;
+        font-size: 30px;
         margin-bottom: 20px;
     }
 
     .parrafo-acerca-de {
-        @extend .titulo-acerca-de;
-        padding: 5px 10px;
-        width: 80%;
-        font-size: 15px;
+        @include paragraph-text;
+        font-size: 30px;
     }
 
 }
@@ -55,7 +53,7 @@
         }
 
         .parrafo-acerca-de {
-            font-size: 20px;
+            font-size: 28px;
         }
 
         .subtitulo-acerca-de {

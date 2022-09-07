@@ -27,6 +27,7 @@
 
     .parrafo-que-son {
         @include paragraph-text;
+        font-size: 30px;
     }
 
     iframe{
@@ -61,10 +62,8 @@
         }
 
         .parrafo-que-son {
-            font-size: 20px;
-            font-family: $main-font;
+            font-size: 28px;
             margin-bottom: 10px;
-        
         }
 
         iframe{

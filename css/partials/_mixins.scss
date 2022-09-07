@@ -1,9 +1,7 @@
 @mixin paragraph-text {
     display: inline-block;
     padding: 5px;
-    font-size: 15px;
-    font-family: $main-font;
-    background-color: map-get($pinks-map, color-pink-translucid);
+    font-family: $sub-font;
     border-radius: 10px;
 }
 

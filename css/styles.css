@@ -219,7 +219,7 @@
   width: 100%;
   height: auto;
 }
-#about-wrapper .titulo-acerca-de, #about-wrapper .parrafo-acerca-de, #about-wrapper .subtitulo-acerca-de {
+#about-wrapper .titulo-acerca-de, #about-wrapper .subtitulo-acerca-de {
   display: inline-block;
   margin: auto;
   padding: 5px 10px;
@@ -231,13 +231,15 @@
 #about-wrapper .subtitulo-acerca-de {
   width: 60%;
   padding: 10px 20px;
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 #about-wrapper .parrafo-acerca-de {
-  padding: 5px 10px;
-  width: 80%;
-  font-size: 15px;
+  display: inline-block;
+  padding: 5px;
+  font-family: "Imbue", serif !important;
+  border-radius: 10px;
+  font-size: 30px;
 }
 
 .about-text-container {
@@ -254,7 +256,7 @@
     height: auto;
     text-align: center;
   }
-  #about-wrapper .titulo-acerca-de, #about-wrapper .subtitulo-acerca-de, #about-wrapper .parrafo-acerca-de {
+  #about-wrapper .titulo-acerca-de, #about-wrapper .subtitulo-acerca-de {
     font-size: 60px;
   }
   #about-wrapper .banner-acerca-de {
@@ -263,7 +265,7 @@
     height: auto;
   }
   #about-wrapper .parrafo-acerca-de {
-    font-size: 20px;
+    font-size: 28px;
   }
   #about-wrapper .subtitulo-acerca-de {
     font-size: 30px;
@@ -369,10 +371,9 @@
 #que-son-wrapper .parrafo-que-son {
   display: inline-block;
   padding: 5px;
-  font-size: 15px;
-  font-family: "Playfair Display", serif;
-  background-color: rgba(242, 160, 174, 0.7);
+  font-family: "Imbue", serif !important;
   border-radius: 10px;
+  font-size: 30px;
 }
 #que-son-wrapper iframe {
   margin-top: 20px;
@@ -401,8 +402,7 @@
     margin-bottom: 50px;
   }
   #que-son-wrapper .parrafo-que-son {
-    font-size: 20px;
-    font-family: "Playfair Display", serif;
+    font-size: 28px;
     margin-bottom: 10px;
   }
   #que-son-wrapper iframe {
@@ -417,7 +417,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*servicios parrafo container*/
 }
 .main-wrapper .servicios-parrafo-container > * {
   width: 80%;
@@ -432,19 +431,19 @@
   background-color: rgba(242, 160, 174, 0.7);
   width: 80%;
   border-radius: 10px;
+  font-size: 40px;
 }
 .main-wrapper .parrafo-servicios {
   display: inline-block;
   padding: 5px;
-  font-size: 15px;
-  font-family: "Playfair Display", serif;
-  background-color: rgba(242, 160, 174, 0.7);
+  font-family: "Imbue", serif !important;
   border-radius: 10px;
+  font-size: 30px;
 }
 .main-wrapper .subtitulo-servicios {
   width: 60%;
   padding: 10px 20px;
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 
@@ -465,10 +464,10 @@
     margin-bottom: 20px;
   }
   .main-wrapper .parrafo-servicios {
-    font-size: 20px;
+    font-size: 28px;
   }
   .main-wrapper .subtitulo-servicios {
-    font-size: 30px;
+    font-size: 28px;
     margin-bottom: 20px;
   }
   #services-wrapper {
