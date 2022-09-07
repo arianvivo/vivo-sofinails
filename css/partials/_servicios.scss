@@ -15,22 +15,18 @@
     }
 
     .titulo-servicios {
-        font-size: 40px;
-        font-family: $main-font;
-        margin-bottom: 20px;
+        @include titulos;
     }
     
     .parrafo-servicios {
-
         @include paragraph-text;
-        // font-size: 18px;
-        // font-family: $main-font;
-
     }
 
     .subtitulo-servicios {
+        @extend .titulo-servicios;
+        width: 60%;
+        padding: 10px 20px;
         font-size: 20px;
-        font-family: $main-font;
         margin-bottom: 20px;
     }
 }

@@ -7,8 +7,7 @@
     background-color: $light-background-color;
 
     .titulo-que-son {
-        font-size: 60px;
-        font-family: $main-font;
+        @include titulos;
     }
 
     .imagen-parrafo {
@@ -27,10 +26,7 @@
     }
 
     .parrafo-que-son {
-        font-size: 20px;
-        font-family: $main-font;
-        margin-bottom: 10px;
-    
+        @include paragraph-text;
     }
 
     iframe{

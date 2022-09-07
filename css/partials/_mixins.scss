@@ -1,5 +1,18 @@
 @mixin paragraph-text {
+    display: inline-block;
+    padding: 5px;
     font-size: 15px;
     font-family: $main-font;
-    background-color: map-get($pinks-map, color-pink-translucid);;
+    background-color: map-get($pinks-map, color-pink-translucid);
+    border-radius: 10px;
+}
+
+@mixin titulos {
+    display: inline-block;
+    margin: auto;
+    padding: 5px 10px;
+    font-family: $main-font;
+    background-color: map-get($pinks-map, color-pink-translucid);
+    width: 80%;
+    border-radius: 10px;
 }

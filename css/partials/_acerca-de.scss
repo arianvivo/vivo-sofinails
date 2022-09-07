@@ -9,32 +9,24 @@
     }
 
     .titulo-acerca-de {
-        display: inline-block;
-        padding: 5px 10px;
-        background-color: map-get($pinks-map, color-pink-translucid);
-        width: 80%;
-        margin: auto;
-    
-    }
-
-    .parrafo-acerca-de {
-        display: inline-block;
-        padding: 5px 10px;
-        width: 80%;
-        font-size: 15px;
-        font-family: $main-font;
-        background-color: map-get($pinks-map, color-pink-translucid);
+        @include titulos
     }
 
     .subtitulo-acerca-de {
-        display: inline-block;
-        margin: auto;
+        @extend .titulo-acerca-de;
+        width: 60%;
         padding: 10px 20px;
         font-size: 20px;
-        font-family: $main-font;
         margin-bottom: 20px;
-        background-color: map-get($pinks-map, color-pink-translucid);
     }
+
+    .parrafo-acerca-de {
+        @extend .titulo-acerca-de;
+        padding: 5px 10px;
+        width: 80%;
+        font-size: 15px;
+    }
+
 }
 
 .about-text-container{

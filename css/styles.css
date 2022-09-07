@@ -219,29 +219,25 @@
   width: 100%;
   height: auto;
 }
-#about-wrapper .titulo-acerca-de {
+#about-wrapper .titulo-acerca-de, #about-wrapper .parrafo-acerca-de, #about-wrapper .subtitulo-acerca-de {
   display: inline-block;
-  padding: 5px 10px;
-  background-color: rgba(242, 160, 174, 0.8);
-  width: 80%;
   margin: auto;
+  padding: 5px 10px;
+  font-family: "Playfair Display", serif;
+  background-color: rgba(242, 160, 174, 0.7);
+  width: 80%;
+  border-radius: 10px;
+}
+#about-wrapper .subtitulo-acerca-de {
+  width: 60%;
+  padding: 10px 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 #about-wrapper .parrafo-acerca-de {
-  display: inline-block;
   padding: 5px 10px;
   width: 80%;
   font-size: 15px;
-  font-family: "Playfair Display", serif;
-  background-color: rgba(242, 160, 174, 0.8);
-}
-#about-wrapper .subtitulo-acerca-de {
-  display: inline-block;
-  margin: auto;
-  padding: 10px 20px;
-  font-size: 20px;
-  font-family: "Playfair Display", serif;
-  margin-bottom: 20px;
-  background-color: rgba(242, 160, 174, 0.8);
 }
 
 .about-text-container {
@@ -258,7 +254,7 @@
     height: auto;
     text-align: center;
   }
-  #about-wrapper .titulo-acerca-de {
+  #about-wrapper .titulo-acerca-de, #about-wrapper .subtitulo-acerca-de, #about-wrapper .parrafo-acerca-de {
     font-size: 60px;
   }
   #about-wrapper .banner-acerca-de {
@@ -312,7 +308,7 @@
 }
 
 .formulario-contacto {
-  background-color: rgba(242, 160, 174, 0.8);
+  background-color: rgba(242, 160, 174, 0.7);
   width: 400px;
 }
 .formulario-contacto label {
@@ -349,8 +345,13 @@
   background-color: rgba(209, 209, 209, 0.8);
 }
 #que-son-wrapper .titulo-que-son {
-  font-size: 60px;
+  display: inline-block;
+  margin: auto;
+  padding: 5px 10px;
   font-family: "Playfair Display", serif;
+  background-color: rgba(242, 160, 174, 0.7);
+  width: 80%;
+  border-radius: 10px;
 }
 #que-son-wrapper .imagen-parrafo {
   box-sizing: border-box;
@@ -366,9 +367,12 @@
   margin: 10px 0px;
 }
 #que-son-wrapper .parrafo-que-son {
-  font-size: 20px;
+  display: inline-block;
+  padding: 5px;
+  font-size: 15px;
   font-family: "Playfair Display", serif;
-  margin-bottom: 10px;
+  background-color: rgba(242, 160, 174, 0.7);
+  border-radius: 10px;
 }
 #que-son-wrapper iframe {
   margin-top: 20px;
@@ -420,19 +424,27 @@
   height: auto;
   margin: 10px 0px;
 }
-.main-wrapper .titulo-servicios {
-  font-size: 40px;
+.main-wrapper .titulo-servicios, .main-wrapper .subtitulo-servicios {
+  display: inline-block;
+  margin: auto;
+  padding: 5px 10px;
   font-family: "Playfair Display", serif;
-  margin-bottom: 20px;
+  background-color: rgba(242, 160, 174, 0.7);
+  width: 80%;
+  border-radius: 10px;
 }
 .main-wrapper .parrafo-servicios {
+  display: inline-block;
+  padding: 5px;
   font-size: 15px;
   font-family: "Playfair Display", serif;
-  background-color: rgba(242, 160, 174, 0.8);
+  background-color: rgba(242, 160, 174, 0.7);
+  border-radius: 10px;
 }
 .main-wrapper .subtitulo-servicios {
+  width: 60%;
+  padding: 10px 20px;
   font-size: 20px;
-  font-family: "Playfair Display", serif;
   margin-bottom: 20px;
 }
 
@@ -448,7 +460,7 @@
     height: auto;
     margin: 50px 0px;
   }
-  .main-wrapper .titulo-servicios {
+  .main-wrapper .titulo-servicios, .main-wrapper .subtitulo-servicios {
     font-size: 60px;
     margin-bottom: 20px;
   }
@@ -469,7 +481,7 @@
   width: 80%;
   font-size: px;
   font-family: "Playfair Display", serif;
-  background-color: rgba(242, 160, 174, 0.863);
+  background-color: rgba(242, 160, 174, 0.7);
 }
 
 .gallery-title {
@@ -477,6 +489,7 @@
 }
 
 .gallery-paragraph {
+  width: 60%;
   font-size: 15px;
 }
 
@@ -501,7 +514,7 @@
   padding: 5px;
   box-sizing: border-box;
   margin: 20px auto;
-  background-color: rgba(242, 160, 174, 0.8);
+  background-color: rgba(242, 160, 174, 0.7);
   transition: all 0.5s;
 }
 .thumbnail-container:hover {

@@ -1,0 +1,9 @@
+Modifiqué los títulos de todas las páginas y el índice.
+Agregué el ícono visible en el título.
+Se agregaron descripciones acordes con el metatag propio
+Agregué las keywords uñas, press on, manicuria, sofi nails
+Agregué extend en clase .subtitulo-acerca-de en _acerca-de.scss.
+
+Los títulos de todas las páginas trabajan con un mixin para unificar las
+clases, y los subtitulos con extends de ella para ajustar algunas propiedades
+particulares.
